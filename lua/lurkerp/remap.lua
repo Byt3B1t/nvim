@@ -4,6 +4,9 @@ vim.g.mapleader = " "
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Format all file
+vim.keymap.set("n", "==", "ggVG=")
+
 -- Center cursor on <C-d>/<C-u>
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
